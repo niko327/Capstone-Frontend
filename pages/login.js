@@ -38,7 +38,7 @@ function Login(props) {
         <Col sm="12" md={{ size: 5, offset: 3 }}>
           <div className="paper">
             <div className="header">
-              {/* <img src="http://localhost:1337/uploads/5a60a9d26a764e7cba1099d8b157b5e9.png" /> */}
+              <h1 style={{ textAlign: "center" }}>Login</h1>
             </div>
             <section className="wrapper">
               {Object.entries(error).length !== 0 &&
@@ -86,7 +86,7 @@ function Login(props) {
 
                     <Button
                       style={{ float: "right", width: 120 }}
-                      color="primary"
+                      color="dark"
                       onClick={() => {
                         setLoading(true);
                         login(data.identifier, data.password)
@@ -120,11 +120,11 @@ function Login(props) {
       <style jsx>
         {`
           .paper {
-            border: 1px solid lightgray;
-            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+            border: 1px solid black;
+            box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.2),
               0px 1px 1px 0px rgba(0, 0, 0, 0.14),
               0px 2px 1px -1px rgba(0, 0, 0, 0.12);
-            border-radius: 6px;
+            border-radius: 10px;
             margin-top: 90px;
           }
           .notification {
@@ -132,10 +132,11 @@ function Login(props) {
           }
           .header {
             width: 100%;
-            height: 120px;
-            background-color: #2196f3;
-            margin-bottom: 30px;
-            border-radius-top: 6px;
+            height: 60px;
+            color: white;
+            background-color: #343a40;
+            margin-bottom: 10px;
+            border-radius: 9px 9px 0px 0px;
           }
           .wrapper {
             padding: 10px 30px 20px 30px !important;

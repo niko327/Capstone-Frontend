@@ -50,8 +50,8 @@ const GET_RESTAURANT_DISHES = gql`
     return (
       <>
           {restaurant.dishes.map((res) => (
-            <Col xs="6" sm="3" style={{ padding: 0 }} key={res.id}>
-              <Card style={{ margin: "0 10px" }}>
+            <Col xs="6" sm="4" style={{ padding: 0 }} key={res.id}>
+              <Card style={{ margin: "0 20px" }}>
                 <CardImg
                   // top={true}
                   style={{ width: "100%" }}
@@ -61,9 +61,9 @@ const GET_RESTAURANT_DISHES = gql`
                   <CardTitle><h4>{res.name}</h4></CardTitle>
                   <CardText style={{fontSize:"14px"}}>{res.description}</CardText>
                 </CardBody>
-                <div className="card-footer">
-                  <Button color="info"
-                    outlinecolor="primary"
+                <div className="card-footer d-flex justify-content-center">
+                  <Button color="dark"
+                    outlinecolor="dark"
                     onClick = {()=> addItem(res)}
                   >
                     + Add To Cart

@@ -75,7 +75,7 @@ function CheckoutForm() {
 
   return (
     <div className="paper">
-      <h5>Your information:</h5>
+      <center><h5>Your information:</h5></center>
       <hr />
       <FormGroup style={{ display: "flex" }}>
         <div style={{ flex: "0.90", marginRight: 10 }}>
@@ -156,7 +156,7 @@ function CheckoutForm() {
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.025em;
-            background-color: #6772e5;
+            background-color: #343a40;
             text-decoration: none;
             -webkit-transition: all 150ms ease;
             transition: all 150ms ease;

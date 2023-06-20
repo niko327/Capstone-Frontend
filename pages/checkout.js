@@ -36,7 +36,7 @@ function Checkout() {
   return (
 
 <div>
-        <h1 style={{ margin: 20 }}>Checkout</h1>
+        <center><h1 style={{ margin: 20 }}>Checkout</h1></center>
         <CartCheckout isAuthenticated={isAuthenticated} />
         <Elements stripe={stripePromise}>
           <CheckoutForm />

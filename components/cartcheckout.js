@@ -42,7 +42,7 @@ function CartCheckout() {
                       marginLeft: 10,
                     }}
                     onClick={() => addItem(item)}
-                    color="link"
+                    color="dark"
                   >
                     +
                   </Button>
@@ -54,7 +54,7 @@ function CartCheckout() {
                       marginRight: 10,
                     }}
                     onClick={() => removeItem(item)}
-                    color="link"
+                    color="dark"
                   >
                     -
                   </Button>
@@ -74,28 +74,27 @@ function CartCheckout() {
   }
 const checkoutItems = ()=>{
   return (
-    <div>
-      <Badge style={{ width: 200, padding: 10 }} color="light">
-        <h5 style={{ fontWeight: 100, color: "gray" }}>Total:</h5>
+    <div><center>
+      <Badge style={{ width: 200, padding: 10 }} color="success">
+        <h5 style={{ fontWeight: 100, color: "white" }}>Total:</h5>
         <h3>${cart.total}</h3>
       </Badge>
       <br />
           <Link href="/">
-            <Button style={{ width: "60%" }} color="primary">
+            <Button style={{ width: 160 }} color="warning">
               <a>Order more</a>
             </Button>
           </Link>
+          </center>
     </div>
   )}
 
 // return Cart
   return (
     <div>
-      <h1> Cart</h1>
-      <Card style={{ padding: "10px 5px" }} className="cart">
-        <CardTitle style={{ margin: 10 }}>Your Order:</CardTitle>
-        <hr />
-        <CardBody style={{ padding: 10 }}>
+      <Card  className="cart">
+      <CardTitle className="card-header d-flex justify-content-center bg-success text-light" ><h2>Your Order</h2></CardTitle>
+        <CardBody className="bg-light" style={{ padding: 10 }}>
           <div style={{ marginBottom: 6 }}>
             <small>Items:</small>
           </div>
