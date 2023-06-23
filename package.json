@@ -23,5 +23,9 @@
   "description": "Full Stack Restaurant App",
   "main": "index.js",
   "author": "nick.king.32785@gmail.com",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "license": "MIT"
 }
